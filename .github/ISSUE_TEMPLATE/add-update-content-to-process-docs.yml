@@ -26,7 +26,18 @@ body:
     attributes:
       label: "Summary of New Content"
       description: "Briefly describe the new content or update you want to add."
-      placeholder: "E.g., Add clarification to risk escalation paths, new checklist for releases, additional role responsibilities, etc."
+      placeholder: "Add additional personas and roles to octoacme-roles-and-personas.md, including responsibilities, collaboration touchpoints, and accountability boundaries for project delivery."
+      value: |
+        Add more personas and roles to the project management processes, especially in docs/octoacme-roles-and-personas.md.
+
+        Suggested additions include roles that improve delivery clarity, ownership, and cross-functional coordination, such as:
+        - Engineering Manager
+        - Technical Lead / Solution Architect
+        - QA / Test Engineer
+        - Delivery Manager / Program Manager
+        - Stakeholder / Executive Sponsor
+        - UX / Design Lead
+        - Operations / Release Coordinator
     validations:
       required: true
 
@@ -36,6 +47,17 @@ body:
       label: "Why is this update needed?"
       description: "Explain the reason for this addition. Is it to address a gap, improve clarity, incorporate a best practice, etc.?"
       placeholder: "E.g., Identified gap in process, team feedback, alignment with industry standards, etc."
+      value: |
+        The current roles-and-personas documentation defines Developers, Product Managers, and Project Managers, but it does not yet capture several common roles that influence planning, execution, delivery quality, and stakeholder alignment.
+
+        Expanding the documented personas will:
+        - Clarify accountability across the project lifecycle
+        - Reduce ambiguity in decision-making and handoffs
+        - Better represent real-world cross-functional collaboration
+        - Improve onboarding for new team members by making responsibilities explicit
+        - Strengthen process consistency across planning, execution, release, and retrospective activities
+
+        This is especially important for institutional knowledge because undocumented or assumed roles can create confusion, duplication of effort, or missed responsibilities.
     validations:
       required: true
 
@@ -45,6 +67,45 @@ body:
       label: "Suggested Content (optional)"
       description: "Paste the proposed new text, checklist, diagram, or example content you'd like to add. (Optional)"
       placeholder: "E.g., - New checklist items, - Copy for a new section, - Example scenario, etc."
+      value: |
+        Proposed personas to add to docs/octoacme-roles-and-personas.md:
+
+        1. Engineering Manager
+           - Responsibilities: team staffing, coaching, delivery support, escalation handling, capacity planning
+           - Interaction with existing roles: partners with Project Managers on timelines and risks, supports Developers, aligns with Product Managers on priorities
+
+        2. Technical Lead / Solution Architect
+           - Responsibilities: technical direction, architecture decisions, design reviews, dependency identification
+           - Interaction with existing roles: translates product goals into technical approaches, supports Developers, informs Project Managers of technical constraints
+
+        3. QA / Test Engineer
+           - Responsibilities: test strategy, validation planning, regression coverage, release readiness feedback
+           - Interaction with existing roles: collaborates with Developers on quality practices and with Project Managers on readiness and risk tracking
+
+        4. Delivery Manager / Program Manager
+           - Responsibilities: cross-team coordination, milestone governance, dependency management, escalation support
+           - Interaction with existing roles: complements Project Managers for larger initiatives and ensures alignment across multiple workstreams
+
+        5. Executive Sponsor / Business Stakeholder
+           - Responsibilities: strategic alignment, priority support, decision escalation, success validation
+           - Interaction with existing roles: provides direction and approvals, receives status from Project Managers and Product Managers
+
+        6. UX / Design Lead
+           - Responsibilities: user flows, interaction design, usability guidance, design validation
+           - Interaction with existing roles: works with Product Managers on user needs and Developers on implementation feasibility
+
+        7. Operations / Release Coordinator
+           - Responsibilities: deployment coordination, environment readiness, release communication, operational checklists
+           - Interaction with existing roles: works with Developers, QA, and Project Managers during release and deployment activities
+
+        Each new persona should include:
+        - Role Summary
+        - Responsibilities
+        - Goals
+        - Typical Communication
+        - How the role interacts with existing personas
+
+        This issue should result in an update to docs/octoacme-roles-and-personas.md to better reflect the full set of contributors involved in successful project delivery.
 
   - type: checkboxes
     id: acceptance_criteria
